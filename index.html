@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estates Artha | New Launch Homes, Villas & Offices in Delhi NCR</title>
+<meta name="description" content="RERA-registered new launches in Noida, Gurugram and Yamuna Expressway. 0% brokerage, free site-visit cab, home loan help.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Meta Pixel: paste your pixel snippet here. Leads fire fbq('track','Lead') automatically. -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="sticky top-0 z-40 border-b" style="background:rgba(11,19,34,.92);backdrop-filter:blur(8px);border-color:var(--ln)">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 h-14">
+    <a href="#top" class="fd text-xl font-bold gold">Estates Artha</a>
+    <nav class="hidden md:flex gap-6 text-sm mu">
+      <a href="#projects" class="hover:text-white">Projects</a><a href="#why" class="hover:text-white">Why us</a>
+      <a href="#amenities" class="hover:text-white">Amenities</a><a href="#stories" class="hover:text-white">Stories</a><a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+    <button class="btn !py-2 !px-4 text-sm" data-act="lead" data-src="Header: Book Site Visit">Book free site visit</button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 opacity-40" id="heroArt" aria-hidden="true"></div>
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(11,19,34,.55),var(--bg))"></div>
+  <div class="relative max-w-6xl mx-auto px-4 py-10 md:py-20 grid md:grid-cols-5 gap-8 items-center">
+    <div class="md:col-span-3 hero-in">
+      <p class="inline-block text-sm gold border rounded-full px-3 py-1 mb-4" style="border-color:var(--ln)">New launches in Noida, Gurugram &amp; Yamuna Expressway</p>
+      <h1 class="fd text-4xl md:text-6xl font-bold leading-tight">Discover exclusive luxury living and high-ROI property investments</h1>
+      <p class="mu mt-4 text-lg max-w-xl">Hand-picked, RERA-registered projects with clear pricing, zero brokerage and a free cab for your site visit.</p>
+      <ul class="mt-5 space-y-2 text-[15px]">
+        <li><span class="gold">✓</span> Prices from ₹42 Lakhs* with transparent cost sheets</li>
+        <li><span class="gold">✓</span> Pre-approved home loans from leading banks</li>
+        <li><span class="gold">✓</span> Limited launch units. Pay a small booking amount to hold yours</li>
+      </ul>
+    </div>
+    <form id="quick" class="md:col-span-2 card p-5 hero-in" novalidate>
+      <h2 class="fd text-2xl font-bold">Book a free site visit</h2>
+      <p class="mu text-sm mb-4">We call back within 15 minutes, 9am to 9pm.</p>
+      <div class="space-y-3">
+        <div><label class="l" for="qn">Full name</label><input class="inp" id="qn" autocomplete="name" placeholder="e.g. Rahul Mehta"></div>
+        <div><label class="l" for="qp">Mobile number</label><div class="flex"><span class="inp !w-auto !rounded-r-none flex items-center mu">+91</span><input class="inp !rounded-l-none" id="qp" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210"></div></div>
+        <div><label class="l" for="qj">Project</label><select class="inp" id="qj"></select></div>
+        <p class="err" id="qe"></p>
+        <button class="btn w-full" type="submit">Book free site visit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="fd text-3xl md:text-4xl font-bold">Featured projects</h2>
+  <p class="mu mt-1 mb-5">Filter by location, budget and property type.</p>
+  <div class="card p-3 grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+    <div><label class="l" for="fLoc">Location</label><select class="inp" id="fLoc"></select></div>
+    <div><label class="l" for="fBud">Budget</label><select class="inp" id="fBud"><option value="">Any budget</option><option value="lt50">Under ₹50 Lakhs</option><option value="mid">₹50 Lakhs to ₹1 Cr</option><option value="gt100">Above ₹1 Cr</option></select></div>
+    <div><label class="l" for="fType">Property type</label><select class="inp" id="fType"></select></div>
+  </div>
+  <div class="flex justify-between items-center mb-4 text-sm mu"><span id="count"></span><button class="gold underline" id="reset">Clear filters</button></div>
+  <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="fd text-3xl md:text-4xl font-bold mb-6">Why buyers choose Estates Artha</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card p-5"><h3 class="fd text-xl font-bold gold">Transparent pricing</h3><p class="mu mt-2 text-sm">Full cost sheet before you visit: base price, GST, registry and parking. No surprises at booking.</p></div>
+    <div class="card p-5"><h3 class="fd text-xl font-bold gold">0% brokerage option</h3><p class="mu mt-2 text-sm">Book directly through us on selected projects and pay nothing in brokerage.</p></div>
+    <div class="card p-5"><h3 class="fd text-xl font-bold gold">Free site-visit cab</h3><p class="mu mt-2 text-sm">A cab picks you up from home or office anywhere in Delhi NCR and drops you back.</p></div>
+    <div class="card p-5"><h3 class="fd text-xl font-bold gold">Home loan assistance</h3><p class="mu mt-2 text-sm">Eligibility check, bank comparison and paperwork handled by our loan desk.</p></div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section id="amenities" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="fd text-3xl md:text-4xl font-bold">Pick the amenities you want</h2>
+  <p class="mu mt-1 mb-5">Select amenities and the project list above narrows to homes that have all of them.</p>
+  <div id="amen" class="flex flex-wrap gap-2"></div>
+  <p class="mt-4 text-sm" id="amenMsg"></p>
+</section>
+
+<!-- STORIES -->
+<section id="stories" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="fd text-3xl md:text-4xl font-bold mb-6">Families and investors we have helped</h2>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="card p-5"><div id="vid"></div></div>
+    <div class="card p-5"><p>“The cost sheet was clear from day one and the cab made our weekend visit easy. We booked our 3 BHK on the second visit.”</p><p class="mt-3 text-sm gold font-semibold">Neha &amp; Rohit Sharma, Grand Residency</p></div>
+    <div class="card p-5"><p>“I bought two shops as an investment. The team shared rental estimates and handled the loan end to end.”</p><p class="mt-3 text-sm gold font-semibold">Ankit Verma, Skyline Business Hub</p></div>
+  </div>
+  <p class="mu text-xs mt-3">Sample testimonials. Replace with real client reviews before going live.</p>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact" class="border-t" style="border-color:var(--ln);background:#080e1a">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+    <div>
+      <p class="fd text-2xl font-bold gold">Estates Artha</p>
+      <p class="mu mt-2 text-sm">Tower B, Sector 62, Noida, Uttar Pradesh 201309</p>
+      <p class="mt-3 text-sm">Call: <a class="gold" href="tel:+919999999999">+91 99999 99999</a><br>Email: <a class="gold" href="mailto:hello@estatesartha.in">hello@estatesartha.in</a></p>
+      <p class="mt-4 text-sm mu space-x-3"><a href="#projects">Projects</a><a href="#why">Why us</a><a href="#amenities">Amenities</a><a href="#stories">Stories</a></p>
+    </div>
+    <div class="md:col-span-2 rounded-xl overflow-hidden border" style="border-color:var(--ln)">
+      <iframe title="Office location" loading="lazy" class="w-full h-56 md:h-full min-h-[220px]" style="border:0;filter:grayscale(.4) invert(.9) hue-rotate(180deg)" src="https://maps.google.com/maps?q=Sector%2062%20Noida&output=embed"></iframe>
+    </div>
+  </div>
+  <p class="max-w-6xl mx-auto px-4 pb-8 text-xs mu">Disclaimer: Estates Artha is an authorised channel partner. RERA Reg. No. UPRERAPRJ00000 (replace with actual numbers). Prices marked * are starting prices, subject to change and exclude taxes and other charges. Images are artistic impressions. Details are indicative and not an offer. Verify project status at up-rera.in and haryanarera.gov.in.</p>
+</footer>
+
+<!-- Floating contact -->
+<div class="fixed right-4 bottom-4 z-50 flex flex-col gap-3">
+  <a id="fwa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener" class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg" style="background:#25d366"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.3-.5 0-1.2.2-4-.9-3.4-1.4-5.5-4.8-5.7-5-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.600c.3-.3.600-.4.800-.4h.6c.2 0 .5 0 .7.600l.9 2.200c.1.200.1.400 0 .600l-.4.600c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.7-.1l1-1.200c.2-.3.400-.2.700-.1l2.100 1c.3.100.5.200.5.400.1.100.1.800-.1 1.500Z"/></svg></a>
+  <a id="fcall" aria-label="Call us" class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg" style="background:var(--gold)"><svg width="26" height="26" viewBox="0 0 24 24" fill="#1a1305"><path d="M6.6 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.2c1.100.4 2.300.6 3.600.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.6 3.600a1 1 0 0 1-.2 1l-2.300 2.200Z"/></svg></a>
+</div>
+
+<!-- Lead modal -->
+<div class="modal" id="mLead" role="dialog" aria-modal="true" aria-labelledby="lt">
+  <div class="sheet p-6">
+    <button class="x" data-close aria-label="Close">×</button>
+    <form id="lf" novalidate>
+      <h2 class="fd text-2xl font-bold pr-8" id="lt">Get price sheet &amp; brochure</h2>
+      <p class="mu text-sm mb-4">Share your details and our expert will call you within 15 minutes.</p>
+      <div class="space-y-3">
+        <div><label class="l" for="ln">Full name</label><input class="inp" id="ln" autocomplete="name"><p class="err" data-e="n"></p></div>
+        <div><label class="l" for="lp">Phone number</label><div class="flex"><span class="inp !w-auto !rounded-r-none flex items-center mu">+91</span><input class="inp !rounded-l-none" id="lp" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210"></div><p class="err" data-e="p"></p></div>
+        <div><label class="l" for="le">Email address</label><input class="inp" id="le" type="email" autocomplete="email"><p class="err" data-e="e"></p></div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="l" for="lj">Interested project</label><select class="inp" id="lj"></select></div>
+          <div><label class="l" for="lc">Configuration</label><select class="inp" id="lc"><option>2 BHK</option><option>3 BHK</option><option>4 BHK Villa</option><option>Penthouse</option><option>Commercial</option></select></div>
+        </div>
+        <button class="btn w-full" type="submit">Send my details</button>
+        <p class="text-xs mu text-center">No spam. Your number is only used to share this project's details.</p>
+      </div>
+    </form>
+    <div id="thanks" class="hidden text-center py-4">
+      <div class="mx-auto w-14 h-14 rounded-full flex items-center justify-center text-2xl" style="background:var(--gold);color:#1a1305">✓</div>
+      <h2 class="fd text-2xl font-bold mt-4">Thank you, <span id="tn"></span></h2>
+      <p class="mu mt-2 mb-5">Your request for <b class="gold" id="tp"></b> is received. Our expert will call you shortly.</p>
+      <div class="space-y-3"><button class="btn w-full" id="dl">Download instant brochure (PDF)</button><a class="btn2 w-full" id="twa" target="_blank" rel="noopener">Chat with expert on WhatsApp</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- Details modal -->
+<div class="modal" id="mDet" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="sheet" style="max-width:640px"><button class="x" data-close aria-label="Close">×</button><div id="det"></div></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
